@@ -33,6 +33,8 @@ const displayUsers = function (userResults) {
     }
 }
 
+
+//Make adjustments to retrieve certain number of users depending on what was selected.
 selectUserNumber.addEventListener("change", function(e) {
     const numUsers = e.target.value;
     getData(numUsers);
