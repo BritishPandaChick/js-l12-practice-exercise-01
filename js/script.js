@@ -1,6 +1,8 @@
+//Global variables 
 const randomFolks = document.querySelector(".random-peeps");
 const selectUserNumber = document.querySelector("#users");
 
+//Get image data 
 const getData = async function (numUsers) {
     const usersRequest = await fetch(`https://randomuser.me/api?results=${numUsers}`);
     const data = await usersRequest.json();
@@ -13,6 +15,7 @@ const getData = async function (numUsers) {
 
 getData(1);
 
+//Display users 
 const displayUsers = function (userResults) {
     randomFolks.innerHTML = "";
 
